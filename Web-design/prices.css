@@ -1,0 +1,138 @@
+#prices * {box-sizing: border-box;}
+#prices {
+  background: url(https://html5book.ru/wp-content/uploads/2015/01/blur.jpg);
+  position: relative;
+  height: 100vh;
+}
+.wrap {
+  width: 640px;
+  margin: 0 auto 0;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+.box {
+  width: 300px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#prices h1 {
+  font-family: 'Comfortaa';
+  text-align: center;
+  margin-top: 130px;
+  color: #fff;
+}
+#prices .top {
+  background: #36454A;
+  padding: 20px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#prices p {
+  margin: 0px 0px 10px;
+}
+#prices .title {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+#prices .price {
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+#prices sup {
+  font-size: 24px;
+  position: relative;
+  top: -15px;
+  color: #6eaca7;
+}
+#prices span {
+    font-size: 16px;
+    color: #6eaca7;
+    text-transform: uppercase;
+}
+#prices .button {
+  text-decoration: none;
+  color: #6eaca7;
+  font-size: 18px;
+  border: 1px solid #6eaca7;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.4s linear;
+}
+#prices .button:hover {
+  color: white;
+  border-color: white;
+}
+#prices .bottom {
+  padding: 20px 20px 40px;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+#prices ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#prices li {
+  border-bottom: 1px solid #e3e3e3;
+  color: #6eaca7;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+#contacts {
+  width: 100%;
+  height: 100vh;
+  padding: 140px 0;
+  overflow: hidden;
+  text-align: center;
+}
+#contacts .ctitle {
+  font-size: 26px;
+  margin-top: 80px;
+  font-family: "Exo 2";
+  text-transform: uppercase;
+  color: #626262;
+}
+#contacts div {
+  width: 128px;
+  position: relative;
+  margin: auto;
+}
+#contacts div::before {
+  content: "\f003";
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  color: rgb(38,100,173);
+  left: 30px;
+  font-family: FontAwesome;
+}
+#contacts hr {
+  display: block;
+  border: 0;
+  width: 100px;
+  height: 1px;
+  background: #797979;
+  margin: 60px auto;
+}
+#contacts .email, #contacts .phone {
+  color: #565656;
+  font-size: 40px;
+  font-family: 'Comfortaa';
+}
+#contacts .email {
+  margin-bottom: 40px;
+}

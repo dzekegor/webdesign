@@ -1,0 +1,57 @@
+:after, :before {box-sizing: border-box;}
+.pulse {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 20px;
+  cursor: pointer;
+  transition: .2s cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 100500;
+}
+.pulse:before, .pulse:after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #FF1D4D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: pulse 1.8s 333ms infinite ease-out;
+}
+.pulse:after {
+  animation: pulse 1.8s 777ms infinite ease-out;
+}
+.pulse > a {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #ff1d4d;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+  transition: .2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.pulse > a:before {
+  content: "\f107";
+  font-family: FontAwesome;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0; transform:scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
